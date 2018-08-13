@@ -1,1 +1,21 @@
-<!-- Create your form here -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>New Student Form</title>
+  </head>
+  <body>
+    <h1>New Student Form</h1>
+
+    <%= form_tag students_path do %>
+      <label>First Name:</label><br>
+      <%= text_field_tag :first_name %><br>
+
+      <label>Last Name</label><br>
+      <%= text_field_tag :last_name %><br>
+
+      <%= submit_tag "Submit Student" %>
+    <% end %>
+
+  </body>
+</html>
